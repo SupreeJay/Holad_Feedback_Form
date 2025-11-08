@@ -1,0 +1,182 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  box-sizing: border-box;
+  margin:0;
+  padding: 7px 50px 0px 50px;
+  font-family: Consolas;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width:100vw;
+  height:100vh;
+  background:linear-gradient(rgba(173, 216, 230, .4), rgba(0, 0, 128, .5)),url('../Pics/coder_Image.png') ;
+  object-fit: contain;
+  text-align: center;
+  color:#fcf5e5;
+}
+#head-comment h1{
+  font-size: 23px;
+  font-weight:bold;
+  margin-bottom:5px;
+  width:100%;
+  padding:0px;
+  font-family: Tahoma;
+}
+#head-comment p{
+  font-size: 17px;
+  margin-bottom:0px;
+  width:100%;
+  padding:5px;
+  font-style: italic;
+  margin-top:-3px;
+}
+#head-comment{
+  margin-bottom: 10px;
+  padding:0px;
+}
+#form-section{
+  padding: 20px;
+  border:1px solid black;
+  border-radius:3px;
+  background-color: rgba(0, 0, 46, .5);
+  
+}
+form{
+  text-align: left;
+}
+  #user_data label, #user_data input, #user-data select,
+  #professional-status{
+  display: block;
+  width:100%;
+}
+#ref_status label, #ref_status span, .fav-feature{
+  display: block;
+  width:100%;
+}
+#user-improvement label, #user-improvement span , #last-area p, #last-area textarea{
+  display: block;
+  width:100%;
+}
+fieldset input[type="submit"]{
+  background-color: green;
+  border:none;
+  color:white;
+  font-size:17px;
+  padding-top:2px;
+  margin:10px 0px 0px 0px;
+  border-radius: 2px;
+  width:100%;
+  height:20px;
+}
+#last-area{
+  max-width: 100%;
+}
+#last-area textarea{
+  border: none;
+  outline: none;
+  padding: 6px 2px ;
+  max-width:100%;
+  min-width: 100%;
+  outline: none;
+  resize: none;
+  font-family: Consolas;
+}
+#last-area p{
+  margin:3px;
+  max-height:40%;
+  min-height:40%;
+}
+#ref_status span{
+  padding-top:-7px;
+ /* border: 2px solid green;*/
+  padding-bottom: 10px;
+}
+#input-values{
+  display: flex;
+  flex-direction: column;
+  padding:0px 2px;
+  gap: 0px;
+  margin-top:0px;
+  margin-bottom:3px;
+ /* border:1px solid violet;*/
+ text-align: left;
+}
+#input-values li{
+  display: flex;
+  list-style: none;
+  /*border: 1px solid green;*/
+  padding: 0px;
+  margin-bottom: 5px;
+  margin-top:0px;
+}
+#input-values li p{
+ /* border:2px solid red;*/
+  margin:0px;
+  font-size: 16px;
+  padding-top:2px;
+  font-size:15px;
+}
+.fav-feature,input{
+  height:20px;
+  outline: none;
+}
+
+#fav_feature_container{
+  margin:5px 0px;
+  font-size:15px;
+}
+#user-improvement span{
+  font-size:15px;
+}
+#user-improvement label, #last-area p, #ref_question_container{
+  font-size:17px;
+  margin-bottom: 7px;
+}
+#ref_question_container{
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+#user_data label{
+  margin-bottom: 0px;
+ /* border: 2px solid yellow;*/
+  font-size: 15px;
+}
+#user_data #last-label{
+  /*border:2px solid white;*/
+  margin-bottom:0px;
+}
+#user_data input{
+  margin-bottom: 9px;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+fieldset{
+  border:none;
+}
+#user-improvement span{
+/*  border: 2px solid violet;*/
+  padding-top:3px;
+  font-size: 14px;
+}
+#user-improvement ul li{
+  list-style: none;
+  display: flex;
+}
+#user-improvement ul{
+  display: flex;
+  flex-direction: column;
+  align-content:start;
+  justify-content: flex-start;
+  gap:4px;
+  /*border: 2px solid green;*/
+  padding: 5.0px;
+  margin:0px;
+}
+input[type="checkbox"],input[type="radio"]{
+  height: 12px;
+}

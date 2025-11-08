@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="holad feedback form">
+  <link rel="stylesheet" href="style.css">
+  <title> Holad Feedback Form Project</title>
+  </head>
+  
+  <body>
+    
+    <section id="head-comment">
+      <h1>Holad Feedback Survey</h1>
+      <p>We will appreciate your feedback on our service delivered to you.</p>
+    </section>
+    
+    <section id="form-section">
+    <form action="/submit-form" method="POST">
+      
+      <fieldset id="user_data"> 
+      
+      <label for="name"> Name </label>
+      <input type="text" placeholder="Enter your name" id="name" name="name" required>
+      <label for="email"> Email </label>
+      <input placeholder="Enter your e-mail" type="email" id="email" name="email" required >
+      <label for="age"> Age(optional)</label>
+      <input placeholder="Enter your age"type="number" id="age" name="age" required>
+      <label id="last-label" for="professional-status"> Which option best describe your current role.</label>
+      <select class="fav-feature" id="professional-status" name="professional-status" required>
+          <option value="" disabled selected hidden>Select an Option. </option>
+        <option value="Student"> Student </option>
+        <option value="Teacher"> Teacher </option>
+        <option value="Lecturer"> Lecturer </option>
+        <option value="Corper"> Corper </option><br>
+      </select>
+      </fieldset>
+      
+      <fieldset id="ref_status">
+      <label id="ref_question_container" for="ref_question"> Would you recommend our service to others?</label>
+      
+      <ul id="input-values"> 
+      <li> 
+     <input type="radio" value="definitely" checked="checked" id="ref_question" name="ref_question">
+     <p> Definitely</p>
+     </li>
+     
+     <li> 
+     <input type="radio" value="maybe" id="ref_question" 
+     name="ref_question"> 
+     <p> Maybe</p>
+     </li>
+     
+     <li>
+     <input type="radio" value="not sure" id="ref_question" 
+     name="ref_question"> 
+     <p> Not-sure </p>
+     </li>
+     
+     <li>
+     <input type="radio" value="no" id="ref_question" 
+     name="ref_question">
+     <p> No</p>
+      </li>
+     </ul>
+     
+      <label id="fav_feature_container" for="fav_feature"> What is your favourite feature in our service.</label>
+      <select class="fav-feature" name="fav-feature" >
+        
+          <option value="" disabled selected hidden>Select an Option. </option>
+        <option value="Price">Price</option>
+        <option value="Product">Product</option>
+        <option value="Delivery">Delivery</option>
+        <option value="Quality">Quality</option><br>
+        <option value="Quantity">Quantity</option><br>
+      </select>
+    </fieldset>
+
+
+     <fieldset id="user-improvement">
+     <label for="improvement-value"> What would you like to see improved?(Check all that apply).</label>
+     
+      <ul> 
+      
+        <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Front-end Projects"> 
+        <span>
+        Front-end Projects.
+        </span>
+        </li>
+    
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Back-end Projects"> 
+     <span>
+        Back-end Projects.
+      </span>
+      </li>
+      
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Data Visualisation Course"> 
+     <span>
+        Data Visualization Course.
+      </span>
+      </li>
+      
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Cybersecurity"> 
+     <span>
+        Cybersecurity.
+      </span>
+    </li>
+    
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Cloud Computing"> 
+     <span>
+        Cloud Computing     
+      </span>
+      </li>
+      
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Blockchain Technology"> 
+     <span>
+        Blockchain Technology.
+      </span>
+      </li>
+      
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="UI/UX Design"> 
+     <span>
+        UI/UX Design.
+      </span>
+      </li>
+      
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Product Design."> 
+     <span>
+        Product Design.
+      </span>
+      </li>
+      
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Data Analytics">
+     <span>
+        Data Analytics.
+      </span>
+      </li> 
+      
+      <li> 
+       <input type="checkbox" id="improvement-value"
+        name="improvement-value" value="Ethical Hacking"> 
+       <span>
+          Ethical Hacking.
+        </span>
+      </li>
+    </ul>
+      
+      </fieldset>
+      
+      <fieldset id="last-area">
+        <p>Any comment or suggestions?</p>
+        <textarea placeholder="Enter your comment here"></textarea>
+        <input type="submit">
+      </fieldset>
+    </form>
+    </section>
+    
+  </body>
+</html>
